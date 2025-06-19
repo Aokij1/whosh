@@ -88,6 +88,7 @@ def all_drivers():
                         # Настройки для Chrome
                         chrome_options = Options()
                         chrome_options.add_argument("--start-maximized")
+                        chrome_options.headless = True
 
                         # Запуск Chrome
                         driver = webdriver.Chrome(options=chrome_options)
